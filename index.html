@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P1-M12</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 95%; margin: auto; }
+        .dropdown { margin-bottom: 20px; }
+        .time-title { font-size: 1.2em; font-weight: bold; }
+        .activity { margin-bottom: 30px; }
+        .banner { background-color: #4CAF50; color: white; padding: 10px; cursor: pointer; }
+        .title { font-weight: bold; }
+        .subtitle { font-style: italic; }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+</head>
+<body>
+    
+    <script>
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+    <div class="container">
+        <h1>Playbook-P1-M12</h1>
+        
+        <div class="dropdown">
+            <label for="class-time">Tiempo efectivo de Clase:</label>
+            <select id="class-time" onchange="updateContent()">
+                <option value="50">50 minutos</option>
+                <option value="45">45 minutos</option>
+                <option value="40">40 minutos</option>
+            </select>
+        </div>
+        
+        <h2 id="selected-time" class="time-title">Tiempo efectivo de clase: 50 minutos</h2>
+        <!-- Actividad 0 -->
+        <div id="activity-0" class="activity">
+            <div class="banner" onclick="toggleContent('revision_mision')">
+                <div class="title">📚 Actividad 0: Revisión de Misión ⏰ Tiempo: N/A</div>
+                <div class="subtitle">Revisar que todos los materiales estén listos para la misión.</div>
+            </div>
+            <div id="revision_mision" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (N/A):</strong> Proyectar Diapositiva 1 y Revisar que todos los materiales estén listos para la misión. Asegurarse de que las Magic Boards y los dispositivos con acceso a internet estén funcionando correctamente, así como los 6 bloques de lego para cada estudiante y verificar que el enlace a los recursos de la clase esté accesible y funcione sin problemas.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 1 -->
+        <div id="activity-1" class="activity">
+            <div class="banner" onclick="toggleContent('saludo_ritual_gnius')">
+                <div class="title">🎉 Actividad 1: Saludo y Ritual Gnius Club ⏰ Tiempo: 1 minuto</div>
+                <div class="subtitle">Dar la bienvenida y preparar el ambiente para el aprendizaje.</div>
+            </div>
+            <div id="saludo_ritual_gnius" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1 minuto):</strong> Proyectar Diapositiva 2 “Gnius Club”.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Hola, Genios! 🌟 ¡Bienvenidos a una nueva aventura! Hoy vamos a explorar la interfaz de Scratch Jr., ¡y estoy seguro de que van a descubrir cosas increíbles! ¿Listos para empezar?”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 3 “¿Cómo están?”; utiliza gestos para evaluar el estado de ánimo de los estudiantes.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Antes de empezar, quiero saber cómo están. Si están emocionados y listos para la misión, levanten el puño. Si sienten que necesitan un poco de energía, crucen los brazos.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 4 y guiar a los estudiantes en el ritual de agradecimiento.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Ahora, juntemos las manos y demos gracias por el aprendizaje de hoy. Todos juntos decimos: ‘¡Gracias por estar aquí, Genios! Hoy va a ser un gran día de aprendizaje y diversión.’”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 5 “Objetivos de la Misión” y explicar los objetivos de la clase.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Hoy, tenemos tres objetivos importantes: 1) Explorar la interfaz de Scratch Jr., 2) Familiarizarnos con los bloques de programación básicos, y 3) trabajar en equipo para compartir ideas y ayudarnos mutuamente. ¡Vamos a descubrir mucho!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 2 -->
+        <div id="activity-2" class="activity">
+            <div class="banner" onclick="toggleContent('innovacion_dia')">
+                <div class="title">💡 Actividad 2: Innovación del Día ⏰ Tiempo: 3 minutos</div>
+                <div class="subtitle">Conocer el robot Bee-Bot y reflexionar sobre su uso en la programación.</div>
+            </div>
+            <div id="innovacion_dia" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 6 “Innovación del Día”.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Hoy vamos a conocer un robot muy especial llamado Bee-Bot. 🐝 Bee-Bot es un pequeño robot que sigue instrucciones y ayuda a visualizar cómo funciona la programación. ¡Veamos de qué se trata!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (2.5 minutos):</strong> Proyectar Diapositiva 7 y reproducir el video sobre el Bee-Bot. Después del video, fomentar la reflexión mediante preguntas que estimulen el pensamiento crítico.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Impresionante, Genios! ¿De qué otra forma creen que podríamos usar robots como Bee-Bot? ¿Y si fueran más grandes o más rápidos? ¿Qué creen que pasaría? ¿Qué limitaciones podrían tener? ¡Piensen en cómo esta tecnología podría mejorar!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 3 -->
+        <div id="activity-3" class="activity">
+            <div class="banner" onclick="toggleContent('brain_gym')">
+                <div class="title">🧠 Actividad 3: Brain Gym ⏰ Tiempo: 8 minutos</div>
+                <div class="subtitle">Explorar la interfaz de Scratch Jr. y aprender los fundamentos básicos de la programación.</div>
+            </div>
+            <div id="brain_gym" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 8 “Brain Gym” y explicar el propósito de la actividad.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Hola, Genios! Hoy vamos a explorar cada rincón de Scratch Jr. y aprender a mover nuestros personajes, agregar y quitar personajes, y hasta crear nuestras propias animaciones. ¡Manos a la obra!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 9 “Escenario” y explicar el área de visualización de personajes donde ocurren las animaciones.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Este es el escenario. Aquí verán cómo los personajes cobran vida y siguen las instrucciones que les damos. Es como un teatro en miniatura donde podemos hacer que nuestros personajes actúen y se muevan como queremos.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (1 minuto):</strong> Proyectar Diapositiva 10 “Agregar y Quitar Personajes” y guiar a los estudiantes sobre cómo seleccionar, añadir o eliminar personajes.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Para crear una historia o animación, necesitamos personajes. Toquen el botón de ‘+’ para agregar uno y seleccionen el que más les guste. Y si quieren borrar alguno, mantengan presionado el personaje hasta que desaparezca. ¡Así de fácil es personalizar su historia!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (1 minuto):</strong> Proyectar Diapositiva 11 “Bloques de Movimiento Básico” y mostrar cómo cada bloque afecta el movimiento de los personajes.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Para hacer que los personajes se muevan, usaremos bloques de movimiento. Toquen y arrastren un bloque al área de programación: el bloque de avanzar los hará moverse hacia adelante, y el de retroceder, hacia atrás. También pueden girar el personaje a la izquierda o derecha. ¡Prueben cada bloque y vean cómo se mueven sus personajes!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 5 (1.5 minutos):</strong> Proyectar Diapositiva 12 “Creación de Animaciones Simples” y guiar a los estudiantes en la creación de una secuencia para una animación continua.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Vamos a combinar bloques de movimiento para que nuestro personaje parezca que está caminando. Coloquen un bloque de ‘avanzar’, seguido de ‘girar’, y luego repítanlo varias veces. ¡Miren cómo da la ilusión de que camina! Esta técnica es ideal para hacer animaciones más realistas.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 6 (1 minuto):</strong> Proyectar Diapositiva 13 “Bloques de Inicio y Fin” y mostrar cómo iniciar y detener las animaciones en Scratch Jr.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Cuando tengan lista su animación, usen la bandera verde para comenzar. Es como darle el primer paso a todo el movimiento. Y si quieren que la animación termine en un punto específico, pueden usar el bloque rojo de fin. Así, todo queda bajo su control.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 7 (1 minuto):</strong> Proyectar Diapositiva 14 “Bloques de Repetición” y guiar a los estudiantes sobre cómo hacer animaciones cíclicas o continuas.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¿Quieren que el personaje siga caminando sin parar? Arrastren el bloque de repetición y coloquen la secuencia de movimiento dentro. Ahora, el personaje repetirá la animación todo el tiempo. ¡Perfecto para historias largas!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 8 (1 minuto):</strong> Proyectar Diapositiva 15 “Resumen y Primeras Historias” y motivar a los estudiantes a probar crear una pequeña escena animada con los elementos que aprendieron.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Con los personajes, el escenario y los bloques de movimiento, ya tienen todo lo necesario para crear sus propias historias. Intenten imaginar una situación simple, como un personaje que camina o da un paseo. ¡Usen la bandera verde para iniciar y el bloque de fin cuando terminen su escena!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 9 (1 minuto):</strong> Proyectar Diapositiva 16 “Resumen Final” y repasar las funciones vistas en esta actividad.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Hoy hemos aprendido cómo agregar personajes, moverlos y hacer pequeñas animaciones! Ahora que conocen los bloques de movimiento, inicio y fin, pueden crear escenas completas. Prueben en casa y vean qué nuevas historias pueden inventar para nuestra próxima misión.”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 4 -->
+        <div id="activity-4" class="activity">
+            <div class="banner" onclick="toggleContent('brain_vitamin')">
+                <div class="title">🍎 Actividad 4: Brain Vitamin ⏰ Tiempo: 10 minutos</div>
+                <div class="subtitle">Realizar una actividad para desarrollar concentración y habilidades motoras.</div>
+            </div>
+            <div id="brain_vitamin" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (5 minutos):</strong> Proyectar Diapositiva 17 “Tricky Tower” y explicar la actividad a los estudiantes.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Hora de activar nuestras manos y mentes! Vamos a construir una torre con nuestros ladrillos, pero esta vez sin encajarlos. Solo equilibren los ladrillos uno encima del otro. ¡Veamos quién puede hacer la torre más alta sin que se caiga!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (3 minutos):</strong> Proyectar Diapositiva 18 y pedir a los estudiantes que prueben equilibrar los ladrillos, variando entre usar solo una mano o cambiar de mano durante la construcción.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Intenten ahora construir la torre usando solo una mano, y luego cambien de mano para el siguiente ladrillo. Si pueden, intenten también equilibrar la torre en sus dedos o construir usando solo dos dedos. ¡Esta es una prueba de concentración y equilibrio!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (2 minutos):</strong> Proyectar Diapositiva 19 y pedir a los estudiantes que observen si lograron mantener su torre estable y si encontraron alguna técnica útil para balancear los ladrillos.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Muy bien, Genios! ¿Qué técnicas usaron para que la torre se mantuviera en pie? ¿Les fue más fácil con una mano o con dos dedos? Este tipo de actividad nos ayuda a concentrarnos y a tener un mejor control de nuestras manos. ¡Gran trabajo!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 5 -->
+        <div id="activity-5" class="activity">
+            <div class="banner" onclick="toggleContent('team_gnius')">
+                <div class="title">🤝 Actividad 5: Team Gnius ⏰ Tiempo: 3 minutos</div>
+                <div class="subtitle">Organizar equipos de trabajo y prepararse para la misión.</div>
+            </div>
+            <div id="team_gnius" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 20 “Team Gnius” y dar instrucciones para que los estudiantes decidan en equipos de cuatro.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “El reto de hoy lo vamos a trabajar en equipos de cuatro. Tienen 30 segundos para decidir con quién van a trabajar. ¡Vamos, a ponerse de acuerdo!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (0.5 minutos):</strong> Proyectar Diapositiva 21 “Cronómetro de 30 segundos” para que los estudiantes finalicen la organización de sus equipos.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> (Esperar 30 segundos para que los equipos se organicen)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (2 minutos):</strong> Proyectar Diapositiva 22 “Cronómetro de 30 segundos” y dar la instrucción de elegir un representante de cada equipo para recoger las Magic Tablets.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Ahora, elijan a un representante del equipo para que venga por sus Magic Tablets, que es donde van a trabajar sus ideas. Tienen 30 segundos para hacerlo.”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 6 -->
+        <div id="activity-6" class="activity">
+            <div class="banner" onclick="toggleContent('challenge')">
+                <div class="title">⚙️ Actividad 6: Challenge ⏰ Tiempo: 18 minutos</div>
+                <div class="subtitle">Planificar y desarrollar animaciones con Scratch Jr. utilizando paper programming.</div>
+            </div>
+            <div id="challenge" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1 minuto):</strong> Proyectar Diapositiva 23 "Introducción al Paper Programming".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Antes de empezar a programar en Scratch Jr., vamos a aprender algo llamado paper programming. Este método nos ayuda a planificar cada paso en papel antes de usar la computadora. Así podemos pensar en los bloques que usaremos y el orden correcto para que nuestros personajes hagan lo que queremos. ¡Vamos a aprender a usarlo!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 24 "Niveles de Reto en Scratch Jr.". </td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Tenemos tres niveles de reto. En el nivel Rockie, van a usar un personaje en un escenario. En el nivel Master, usarán dos personajes y dos escenarios. Y en el nivel Hacker, podrán crear una mini-historia con tres personajes y tres escenarios. ¡Elijan el que les parezca más divertido!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (1.5 minutos):</strong> Proyectar Diapositiva 25 "Observación y Planificación".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Miren bien la interfaz de Scratch Jr. y piensen en los pasos para que su animación funcione. ¿Qué debe hacer cada personaje? Escriban cada instrucción en papel, como una lista. Por ejemplo, ‘al presionar la bandera’, ‘mover 10 pasos’, o ‘cambiar fondo’. Así podrán ver toda la secuencia que van a programar.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (10 minutos):</strong> Proyectar Diapositiva 26 "Escribe tu Paper Programming".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Escriban cada paso de su secuencia en su papel o tablet. Los que eligieron Rockie, planearán una secuencia para un personaje; los de Master usarán dos personajes y dos escenarios; y los de Hacker podrán hacer una pequeña historia en tres escenarios. ¡Sean claros con cada paso!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 5 (2 minutos):</strong> Proyectar Diapositiva 27 "Explicación al Patito de Goma".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Ahora, expliquen cada paso a su compañero como si él o ella fuera un patito de goma. El compañero debe asentir si entiende o hacer preguntas si algo no queda claro. Este ejercicio les ayuda a ver si sus instrucciones son claras y comprensibles.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 6 (1 minuto):</strong> Proyectar Diapositiva 28 "Intercambio de Roles".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Ahora cambien de roles. El que explicó ahora escuchará, y el que escuchó ahora explicará. Recuerden seguir los pasos en el orden que los escribieron y ser claros en cada detalle.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 7 (2 minutos):</strong> Proyectar Diapositiva 29 "Revisión y Ajustes".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Tómense un momento para hablar con su compañero sobre qué partes fueron claras y cuáles podrían mejorar. Recuerden, el objetivo es que la secuencia sea lógica y fácil de entender para cuando la lleven a Scratch Jr.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 8 (0.5 minutos):</strong> Proyectar Diapositiva 30 "Mon-e Time".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Genios, excelente trabajo! Han completado su paper programming y están listos para llevar sus ideas a Scratch Jr. ¡Se ganaron su Mon-e por todo su esfuerzo y creatividad!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 9 (0.5 minutos):</strong> Proyectar Diapositiva 31 "Objetivos Alcanzados".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Hoy aprendimos a planificar nuestras animaciones en Scratch Jr. usando paper programming y el método del Patito de Goma para revisar nuestras ideas. ¡Han hecho un trabajo increíble!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 7 -->
+        <div id="activity-7" class="activity">
+            <div class="banner" onclick="toggleContent('easter_egg')">
+                <div class="title">🎁 Actividad 7: Easter Egg ⏰ Tiempo: 5 minutos</div>
+                <div class="subtitle">Actividad sorpresa para reforzar conceptos clave de la clase.</div>
+            </div>
+            <div id="easter_egg" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1 minuto):</strong> Proyectar Diapositiva 32 “Easter Egg” e introducir la actividad sorpresa.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Genios, llegó el momento del Easter Egg! Esta es una pregunta sorpresa para ver quién estuvo muy atento durante Brain Gym. La siguiente diapositiva tiene una pregunta sobre lo que aprendimos. ¡Levanten la mano si saben la respuesta, pero no la digan en voz alta!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (2 minutos):</strong> Proyectar Diapositiva 33 “Pregunta Easter Egg” y dar la indicación de levantar la mano sin decir la respuesta en voz alta.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Aquí va la pregunta… ¿Cómo se llama el botón que usamos para que todos nuestros bloques de programación empiecen a ejecutarse en Scratch Jr. al mismo tiempo? Levanten la mano si saben, ¡y recuerden no decir la respuesta en voz alta!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (2 minutos):</strong> Proyectar Diapositiva 34 y reconocer a los estudiantes que respondieron correctamente y proyectar la respuesta en la diapositiva.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Muy bien! El botón que usamos para empezar todos los bloques al mismo tiempo en Scratch Jr. es la bandera verde. Felicidades a los ganadores de Mon-e. ¡Gracias por estar tan atentos!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 8 -->
+        <div id="activity-8" class="activity">
+            <div class="banner" onclick="toggleContent('honor_dojo')">
+                <div class="title">🏆 Actividad 8: Honor de Dojo ⏰ Tiempo: 3 minutos</div>
+                <div class="subtitle">Reflexionar sobre los aprendizajes y cerrar la sesión.</div>
+            </div>
+            <div id="honor_dojo" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (2 minutos):</strong> Proyectar Diapositiva 35 “Reflexión Final” y repasar los objetivos alcanzados, motivando a los estudiantes para las próximas sesiones.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Hoy aprendimos a mover personajes, crear animaciones y planificar nuestras ideas en papel antes de programarlas. ¡Han hecho un excelente trabajo, Genios! Recuerden que estos conocimientos serán la base para crear proyectos aún más increíbles. ¡Espero ver todo lo que pueden lograr en la próxima misión!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 36 y pedir a los estudiantes que recojan los materiales y dejen el salón ordenado para la próxima sesión.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Antes de despedirnos, vamos a asegurarnos de que nuestro espacio de trabajo quede limpio y ordenado. Cada equipo recoja sus materiales y asegúrense de que todo esté en su lugar. ¡Gracias por ayudar a cuidar nuestro lugar de aprendizaje!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div> <!-- Cierre del container -->
+
+    <!-- Scripts necesarios -->
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+
+        function updateContent() {
+            const time = document.getElementById("class-time").value;
+            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+
+            // Ocultar o mostrar actividades según la duración seleccionada
+            document.getElementById("activity-2").style.display = (time === "40") ? "none" : "block";
+            document.getElementById("activity-4").style.display = (time === "50") ? "block" : "none";
+        }
+
+        // Inicializar contenido al cargar la página
+        updateContent();
+    </script>
+
+</body>
+</html>
